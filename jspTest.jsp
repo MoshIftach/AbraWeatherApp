@@ -1,8 +1,14 @@
+<%@page import ="Memcache.GoogleMemcache" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
-<body>
-<h3>Hello World!</h3>
-
-The time on the server is <%= new java.util.Date() %>
-
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <%
+        GoogleMemcache x = new GoogleMemcache();
+        %>
+    </body>
 </html>
